@@ -24,6 +24,6 @@ public class App extends SpringBootServletInitializer implements CommandLineRunn
 
     @Override
     public void run(String... args) {
-        System.out.println("App is running!");
+        System.out.println("App provider is running!");
     }
 }
