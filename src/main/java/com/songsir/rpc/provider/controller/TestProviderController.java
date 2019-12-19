@@ -1,7 +1,5 @@
 package com.songsir.rpc.provider.controller;
 
-import com.alibaba.dubbo.config.annotation.Reference;
-import com.songsir.rpc.provider.service.TestProviderService;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,8 +14,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestProviderController {
 
-    @Reference(version = "1.0.0", check = false)
-    private TestProviderService testProviderService;
 
     @RequestMapping("/testProvider")
     public String testProvider() {
@@ -25,8 +21,4 @@ public class TestProviderController {
         return "Hello World!";
     }
 
-    @RequestMapping("/test2")
-    public String test2() {
-        return testProviderService.getHelloWorld("");
-    }
 }
