@@ -1,4 +1,4 @@
-package com.songsir.rpc.provider;
+package com.songsir;
 
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
 import org.springframework.boot.CommandLineRunner;
