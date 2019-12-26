@@ -16,6 +16,10 @@
     <dependencies>
         <dependency>
             <groupId>com.songsir.rpc</groupId>
+            <artifactId>songsir-rpc-provider-dao</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.songsir.rpc</groupId>
             <artifactId>songsir-rpc-provider-service</artifactId>
         </dependency>
         <dependency>

@@ -1,6 +1,7 @@
 package com.songsir;
 
 import com.alibaba.dubbo.config.spring.context.annotation.DubboComponentScan;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,6 +15,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * @Description:
  * @Copyright Copyright (c) 2019, songsir01@163.com All Rights Reserved.
  */
+@MapperScan("com.songsir.rpc.provider.dao")
 @SpringBootApplication
 @DubboComponentScan(basePackages = {"com.songsir.rpc.provider.service.impl"})
 public class App extends SpringBootServletInitializer implements CommandLineRunner {
