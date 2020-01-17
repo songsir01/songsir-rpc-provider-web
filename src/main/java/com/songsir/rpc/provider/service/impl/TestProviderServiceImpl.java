@@ -31,4 +31,14 @@ public class TestProviderServiceImpl implements TestProviderService {
     public List<User> getUserByUid(User user) {
         return testMapper.getUserListByUid(user);
     }
+
+    @Override
+    public String testUseHttpOrRpc() {
+        int sizeI = 15;
+        StringBuffer str = new StringBuffer("test");
+        for (int i = 0; i < sizeI; i++) {
+            str.append(i).append(str);
+        }
+        return str.toString();
+    }
 }
